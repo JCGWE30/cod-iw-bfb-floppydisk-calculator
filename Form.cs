@@ -19,7 +19,10 @@ namespace BFBFloppyDiskSolver
         }
         private void click(Image img, string numb)
         {
-            unkimg = button16.Image;
+            if (unkimg == null)
+            {
+                unkimg = button16.Image;
+            }
             if (button13.Text == "")
             {
                 button13.Image = img;
